@@ -14,8 +14,9 @@ from ._method import differential_plot, loading_plot
 from qurro._parameter_descriptions import EXTREME_FEATURE_COUNT, TABLE, DEBUG
 from qiime2.plugin import Metadata, Properties, Int, Bool
 from q2_types.feature_table import FeatureTable, Frequency
-from q2_types.feature_data import FeatureData, Differential
+from q2_types.feature_data import FeatureData
 from q2_types.ordination import PCoAResults
+from songbird.q2 import Differential
 
 plugin = qiime2.plugin.Plugin(
     name="qurro",
