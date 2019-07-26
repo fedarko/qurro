@@ -10,5 +10,5 @@
 # The full license is in the file LICENSE.txt, distributed with this software.
 # ----------------------------------------------------------------------------
 
-__version__ = "0.3.0"
+__version__ = "0.3.0-q2-2019.4-support"
 name = "qurro"
