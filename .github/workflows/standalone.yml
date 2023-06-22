@@ -4,7 +4,12 @@ name: Standalone CI
 on: [push, pull_request]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # ubuntu-latest doesn't support python 3.6 -- see
+    # https://github.com/actions/setup-python/issues/544. Ideally we'd do
+    # something fancy to test on ubuntu-latest for all python versions > 3.6
+    # (and then test on ubuntu-20.04 for just python 3.6), but this is the path
+    # of least resistance.
+    runs-on: ubuntu-20.04
 
     strategy:
       matrix:
