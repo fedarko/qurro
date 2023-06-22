@@ -88,7 +88,9 @@ setup(
         "click",
         "numpy >= 1.12.0",
         # SparseDataFrame is dead, long live DataFrame
-        "pandas >= 1",
+        # ALSO: Our pinned version of Altair doesn't seem to support pandas 2,
+        # so we'll limit pandas to this range for the time being.
+        "pandas >= 1, < 2",
         "scikit-bio > 0.5.3",
         # Due to scikit-bio problems -- pinning to < 1.9.0. Should be hopefully
         # fixed when a new scikit-bio release comes out.
