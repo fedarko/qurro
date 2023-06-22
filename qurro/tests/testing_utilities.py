@@ -357,7 +357,6 @@ def validate_sample_plot_json(
     # filtered out.
     sample_metadata = replace_nan(read_metadata_file(metadata_loc))
     for sample in sample_json["datasets"][dn]:
-
         sample_id = sample["Sample ID"]
 
         for metadata_col in sample_metadata.columns:

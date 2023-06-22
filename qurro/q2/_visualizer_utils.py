@@ -21,7 +21,6 @@ def create_q2_visualization(
     extreme_feature_count,
     debug,
 ):
-
     # Same thing as in the standalone version of Qurro -- only show debug
     # messages if explicitly requested with --(p-)debug. As with there, this is
     # inspired by https://stackoverflow.com/a/14098306/10730311.

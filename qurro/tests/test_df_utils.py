@@ -358,7 +358,6 @@ def test_remove_empty_samples_and_features_allempty():
 
 
 def test_print_if_dropped(capsys):
-
     table, metadata, ranks = get_test_data()
 
     # Neither of these should result in anything being printed
@@ -418,7 +417,6 @@ def test_print_if_dropped(capsys):
 
 
 def test_merge_feature_metadata():
-
     ranks = DataFrame({"R1": [1, 2], "R2": [2, 1]}, index=["F1", "F2"])
     fm = DataFrame(
         {"FM1": [None, None], "FM2": [1, 2], "FM3": [8, 7]}, index=["F1", "F2"]
@@ -468,7 +466,6 @@ def test_merge_feature_metadata():
 
 
 def test_sparsify_count_dict():
-
     # Test that it works in basic case
     test_cts = {
         "Feature 1": {"Sample 1": 0, "Sample 2": 3, "Sample 3": 0},
@@ -497,7 +494,6 @@ def test_sparsify_count_dict():
 
 
 def test_check_column_names():
-
     _, sm, fr = get_test_data()
     fm = fr.copy()
     fm.columns = ["FM1", "FM2"]
@@ -833,7 +829,6 @@ def verify_spc_data_integrity(output_feature_data, initial_feature_data):
 
 
 def test_add_sample_presence_count_basic():
-
     # NOTE: for reference, the get_test_data() table initially looks like this:
     # "Sample1": [1, 2, 3, 4, 5, 6, 7, 8],
     # "Sample2": [8, 7, 6, 5, 4, 3, 2, 1],

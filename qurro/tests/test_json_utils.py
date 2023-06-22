@@ -126,7 +126,6 @@ def test_get_jsons():
 
 
 def test_plot_jsons_equal():
-
     assert plot_jsons_equal(None, None)
     assert plot_jsons_equal({}, {})
     assert not plot_jsons_equal({"a": "b"}, {"a": "c"})
